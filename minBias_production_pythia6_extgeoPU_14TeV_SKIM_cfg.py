@@ -51,7 +51,7 @@ process.load('Configuration.Geometry.GeometryExtendedReco_cff')
 process.load('Configuration.Geometry.GeometryExtended_cff')
 process.load('Configuration.StandardSequences.MagneticField_38T_cff')
 process.load('Configuration.StandardSequences.Generator_cff')
-process.load('Configuration.StandardSequences.VtxSmearedNoSmear_cff')
+process.load('IOMC.EventVertexGenerators.VtxSmearedNominalCollision1_cfi')
 process.load('GeneratorInterface.Core.genFilterSummary_cff')
 process.load('Configuration.StandardSequences.Sim_cff')
 process.load('Configuration.StandardSequences.EndOfProcess_cff')
@@ -195,3 +195,4 @@ process.schedule = cms.Schedule(process.generation_step,process.genfiltersummary
 # filter all path with the production filter sequence
 for path in process.paths:
     getattr(process,path)._seq = process.ProductionFilterSequence * getattr(process,path)._seq 
+
