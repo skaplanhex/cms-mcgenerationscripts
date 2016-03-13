@@ -46,9 +46,9 @@ process.load('FWCore.MessageService.MessageLogger_cfi')
 # )
 
 process.load('Configuration.EventContent.EventContent_cff')
-process.load('SimGeneral.MixingModule.mix_2012_Summer_50ns_PoissonOOTPU_cfi')
-process.load('Configuration.Geometry.GeometryExtendedReco_cff')
-process.load('Configuration.Geometry.GeometryExtended_cff')
+#process.load('SimGeneral.MixingModule.mix_2012_Summer_50ns_PoissonOOTPU_cfi')
+process.load('Configuration.Geometry.GeometryExtended2016Reco_cff') # for Run 2 geometry
+process.load('Configuration.Geometry.GeometryExtended2016_cff') # for Run 2 geometry
 process.load('Configuration.StandardSequences.MagneticField_38T_cff')
 process.load('Configuration.StandardSequences.Generator_cff')
 process.load('Configuration.StandardSequences.VtxSmearedNoSmear_cff')
