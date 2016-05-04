@@ -9,7 +9,7 @@ from FWCore.ParameterSet.VarParsing import VarParsing
 options = VarParsing ('python')
 
 options.register('outfilename',
-                 "outfile14TeVSKIM.root",
+                 "outfile13TeVSKIM.root",
                  VarParsing.multiplicity.singleton,
                  VarParsing.varType.string,
                  "output file name"
